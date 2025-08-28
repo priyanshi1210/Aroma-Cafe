@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <title>Café Aroma - Home</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Café Aroma</h1>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button onclick="openCart()">🛒 Cart</button></li>
+        <li><button class="dark-toggle">🌙 Dark</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+  <video autoplay muted loop class="bg-video">
+    <source src="coffee.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-content">
+    <h1>Welcome to Café Aroma ☕</h1>
+    <p>Where every sip feels like home.</p>
+    <a href="menu.html" class="btn">Explore Menu</a>
+  </div>
+</section>
+
+
+  <!-- Specials Section -->
+   
+  <section class="container specials">
+    <h2>✨ Chef’s Specials</h2>
+    <div class="menu-grid">
+      <div class="menu-item card">
+        <img src="cofee 4.jpg" alt="Caramel Macchiato">
+        <h3>Caramel Macchiato</h3>
+        <p>$5</p>
+      </div>
+      <div class="menu-item card">
+        <img src="coffee1.jpg" alt="Cold Brew">
+        <h3>Cold Brew</h3>
+        <p>$4.5</p>
+      </div>
+      <div class="menu-item card">
+        <img src="brownie.jpg" alt="Vegan Brownie">
+        <h3>Vegan Brownie</h3>
+        <p>$3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <section class="container testimonials">
+    <h2>💬 What Our Customers Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">“Best coffee in town! ☕” – Sarah</div>
+      <div class="testimonial">“Perfect place to work & chill.” – Raj</div>
+      <div class="testimonial">“Loved the pastries, will come again!” – Ananya</div>
+    </div>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="container newsletter">
+    <h2>📩 Stay Updated</h2>
+    <p>Subscribe to get special offers and updates.</p>
+    <form onsubmit="return newsletterSignup()">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email">
+      <button class="btn">Subscribe</button>
+    </form>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Café Aroma | Stay Caffeinated</p>
+    <p>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>

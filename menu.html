@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Café Aroma - Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Café Aroma</h1>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button onclick="openCart()">🛒 Cart</button></li>
+        <li><button class="dark-toggle">🌙 Dark</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Searchable Menu -->
+  <section class="container">
+    <h2>☕ Our Menu</h2>
+    <input type="text" id="menuSearch" placeholder="Search menu items..." onkeyup="searchMenu()">
+  </section>
+
+  <!-- Menu Grid -->
+  <!-- Menu Grid -->
+<section class="container menu-grid" id="menuItems">
+  
+  <!-- Coffee Section -->
+  <h2 class="menu-category">☕ Coffee</h2>
+  <div class="menu-item card">
+    <img src="cofee 4.jpg" alt="Latte">
+    <h3>Latte</h3>
+    <p>$4.00</p>
+    <button onclick="addToCart('Latte', 4)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="c6.jpg" alt="Mocha">
+    <h3>Mocha</h3>
+    <p>$4.50</p>
+    <button onclick="addToCart('Mocha', 4.5)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="coffee1.jpg" alt="Caramel Macchiato">
+    <h3>Caramel Macchiato</h3>
+    <p>$5.00</p>
+    <button onclick="addToCart('Caramel Macchiato', 5)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="coffee.jpg" alt="Cold Brew">
+    <h3>Cold Brew</h3>
+    <p>$4.50</p>
+    <button onclick="addToCart('Cold Brew', 4.5)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="c5.jpg" alt="Espresso">
+    <h3>Espresso</h3>
+    <p>$3.00</p>
+    <button onclick="addToCart('Espresso', 3)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="c3.jpg" alt="Cappuccino">
+    <h3>Cappuccino</h3>
+    <p>$4.20</p>
+    <button onclick="addToCart('Cappuccino', 4.2)">Add to Cart</button>
+  </div>
+
+  <!-- Tea Section -->
+  <h2 class="menu-category">🍵 Tea</h2>
+  <div class="menu-item card">
+    <img src="green tea.jpg" alt="Green Tea">
+    <h3>Green Tea</h3>
+    <p>$2.50</p>
+    <button onclick="addToCart('Green Tea', 2.5)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="black tea.jpg" alt="Black Tea">
+    <h3>Black Tea</h3>
+    <p>$2.20</p>
+    <button onclick="addToCart('Black Tea', 2.2)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="chai 1.jpg" alt="Masala Chai">
+    <h3>Masala Chai</h3>
+    <p>$2.80</p>
+    <button onclick="addToCart('Masala Chai', 2.8)">Add to Cart</button>
+  </div>
+
+  <!-- Pastries & Desserts Section -->
+  <h2 class="menu-category">🥐 Pastries & Desserts</h2>
+  <div class="menu-item card">
+    <img src="brownie.jpg" alt="Vegan Brownie">
+    <h3>Vegan Brownie</h3>
+    <p>$3.00</p>
+    <button onclick="addToCart('Vegan Brownie', 3)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="crosont.jpg" alt="Croissant">
+    <h3>Butter Croissant</h3>
+    <p>$2.50</p>
+    <button onclick="addToCart('Croissant', 2.5)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="muffin.jpg" alt="Blueberry Muffin">
+    <h3>Blueberry Muffin</h3>
+    <p>$2.80</p>
+    <button onclick="addToCart('Blueberry Muffin', 2.8)">Add to Cart</button>
+  </div>
+  <div class="menu-item card">
+    <img src="cheesecake.jpg" alt="Cheesecake">
+    <h3>Cheesecake</h3>
+    <p>$4.50</p>
+    <button onclick="addToCart('Cheesecake', 4.5)">Add to Cart</button>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Café Aroma | Stay Caffeinated</p>
+    <p>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+  
+</body>
+</html>
